@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_tiles_banner_tiles",
+  "info": {
+    "displayName": "bannerTiles"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "text": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_home_banner_section_chooseuses",
+  "info": {
+    "displayName": "chooseUs"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "chooseUsTiles": {
+      "type": "component",
+      "component": "tiles.banner-tiles",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

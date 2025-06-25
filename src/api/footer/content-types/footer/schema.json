@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "LogoDetails": {
+      "type": "text"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "contactInformation": {
+      "type": "component",
+      "component": "footer.contact-information",
+      "repeatable": false
+    }
+  }
+}

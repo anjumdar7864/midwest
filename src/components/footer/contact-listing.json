@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_footer_contact_listings",
+  "info": {
+    "displayName": "contactListing"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_services_services",
+  "info": {
+    "displayName": "Services"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "services": {
+      "type": "component",
+      "component": "tiles.banner-tiles",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

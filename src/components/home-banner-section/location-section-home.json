@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_home_banner_section_location_section_homes",
+  "info": {
+    "displayName": "Location Section Home"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "LocationsList": {
+      "type": "component",
+      "component": "home-banner-section.locations",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_footer_contact_informations",
+  "info": {
+    "displayName": "ContactInformation"
+  },
+  "options": {},
+  "attributes": {
+    "contactListing": {
+      "type": "component",
+      "component": "footer.contact-listing",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

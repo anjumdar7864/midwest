@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_home_banner_section_why_choose_uses",
+  "info": {
+    "displayName": "Why Choose Us"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "chooseUs": {
+      "type": "component",
+      "component": "home-banner-section.choose-us",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}
