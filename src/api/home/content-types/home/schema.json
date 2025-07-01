@@ -30,6 +30,11 @@
       "type": "component",
       "component": "home-banner-section.why-choose-us",
       "repeatable": false
+    },
+    "testimonials": {
+      "type": "component",
+      "component": "home-banner-section.testimonials",
+      "repeatable": true
     }
   }
 }

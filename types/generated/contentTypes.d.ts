@@ -639,6 +639,10 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
     >;
     publishedAt: Schema.Attribute.DateTime;
     Services: Schema.Attribute.Component<'services.services', false>;
+    testimonials: Schema.Attribute.Component<
+      'home-banner-section.testimonials',
+      true
+    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -927,12 +931,6 @@ export interface PluginTreeMenusMenu extends Struct.CollectionTypeSchema {
       'oneToMany',
       'plugin::tree-menus.menu'
     >;
-    logo: Schema.Attribute.Media<'images'> &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'title'> &
       Schema.Attribute.Required &

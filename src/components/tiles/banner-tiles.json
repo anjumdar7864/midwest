@@ -20,6 +20,11 @@
     },
     "text": {
       "type": "richtext"
+    },
+    "features": {
+      "type": "component",
+      "component": "text-list.text-list",
+      "repeatable": true
     }
   },
   "config": {}

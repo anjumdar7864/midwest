@@ -11,10 +11,10 @@
     "Description": {
       "type": "text"
     },
-    "chooseUs": {
+    "chooseUsTiles": {
       "type": "component",
-      "component": "home-banner-section.choose-us",
-      "repeatable": false
+      "component": "tiles.banner-tiles",
+      "repeatable": true
     }
   },
   "config": {}

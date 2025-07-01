@@ -78,16 +78,26 @@ export interface HomeBannerSectionLocations extends Struct.ComponentSchema {
   };
 }
 
+export interface HomeBannerSectionTestimonials extends Struct.ComponentSchema {
+  collectionName: 'components_home_banner_section_testimonials';
+  info: {
+    displayName: 'testimonials';
+  };
+  attributes: {
+    companyName: Schema.Attribute.String;
+    grade: Schema.Attribute.Integer;
+    name: Schema.Attribute.String;
+    review: Schema.Attribute.Text;
+  };
+}
+
 export interface HomeBannerSectionWhyChooseUs extends Struct.ComponentSchema {
   collectionName: 'components_home_banner_section_why_choose_uses';
   info: {
     displayName: 'Why Choose Us';
   };
   attributes: {
-    chooseUs: Schema.Attribute.Component<
-      'home-banner-section.choose-us',
-      false
-    >;
+    chooseUsTiles: Schema.Attribute.Component<'tiles.banner-tiles', true>;
     Description: Schema.Attribute.Text;
     Title: Schema.Attribute.String;
   };
@@ -100,7 +110,7 @@ export interface ServicesServices extends Struct.ComponentSchema {
   };
   attributes: {
     Description: Schema.Attribute.Text;
-    services: Schema.Attribute.Component<'tiles.banner-tiles', true>;
+    servicesList: Schema.Attribute.Component<'tiles.banner-tiles', true>;
     Title: Schema.Attribute.String;
   };
 }
@@ -183,6 +193,7 @@ export interface TilesBannerTiles extends Struct.ComponentSchema {
     displayName: 'bannerTiles';
   };
   attributes: {
+    features: Schema.Attribute.Component<'text-list.text-list', true>;
     Icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     text: Schema.Attribute.RichText;
     Title: Schema.Attribute.String;
@@ -198,6 +209,7 @@ declare module '@strapi/strapi' {
       'home-banner-section.home-banner': HomeBannerSectionHomeBanner;
       'home-banner-section.location-section-home': HomeBannerSectionLocationSectionHome;
       'home-banner-section.locations': HomeBannerSectionLocations;
+      'home-banner-section.testimonials': HomeBannerSectionTestimonials;
       'home-banner-section.why-choose-us': HomeBannerSectionWhyChooseUs;
       'services.services': ServicesServices;
       'shared.media': SharedMedia;

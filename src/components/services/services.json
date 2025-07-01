@@ -11,7 +11,7 @@
     "Description": {
       "type": "text"
     },
-    "services": {
+    "servicesList": {
       "type": "component",
       "component": "tiles.banner-tiles",
       "repeatable": true

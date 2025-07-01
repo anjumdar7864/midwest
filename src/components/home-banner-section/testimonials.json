@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_home_banner_section_testimonials",
+  "info": {
+    "displayName": "testimonials"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "review": {
+      "type": "text"
+    },
+    "grade": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}
