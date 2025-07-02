@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_services_feature_tiles",
+  "info": {
+    "displayName": "featureTiles"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Detials": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

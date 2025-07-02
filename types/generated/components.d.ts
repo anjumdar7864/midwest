@@ -1,5 +1,18 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface AboutUsTeam extends Struct.ComponentSchema {
+  collectionName: 'components_about_us_teams';
+  info: {
+    displayName: 'team';
+  };
+  attributes: {
+    Designation: Schema.Attribute.String;
+    Details: Schema.Attribute.Text;
+    Name: Schema.Attribute.String;
+    profileImage: Schema.Attribute.Media<'images'>;
+  };
+}
+
 export interface FooterContactInformation extends Struct.ComponentSchema {
   collectionName: 'components_footer_contact_informations';
   info: {
@@ -99,6 +112,18 @@ export interface HomeBannerSectionWhyChooseUs extends Struct.ComponentSchema {
   attributes: {
     chooseUsTiles: Schema.Attribute.Component<'tiles.banner-tiles', true>;
     Description: Schema.Attribute.Text;
+    Title: Schema.Attribute.String;
+  };
+}
+
+export interface ServicesFeatureTiles extends Struct.ComponentSchema {
+  collectionName: 'components_services_feature_tiles';
+  info: {
+    displayName: 'featureTiles';
+  };
+  attributes: {
+    Detials: Schema.Attribute.String;
+    icon: Schema.Attribute.Media<'images'>;
     Title: Schema.Attribute.String;
   };
 }
@@ -203,6 +228,7 @@ export interface TilesBannerTiles extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'about-us.team': AboutUsTeam;
       'footer.contact-information': FooterContactInformation;
       'footer.contact-listing': FooterContactListing;
       'home-banner-section.choose-us': HomeBannerSectionChooseUs;
@@ -211,6 +237,7 @@ declare module '@strapi/strapi' {
       'home-banner-section.locations': HomeBannerSectionLocations;
       'home-banner-section.testimonials': HomeBannerSectionTestimonials;
       'home-banner-section.why-choose-us': HomeBannerSectionWhyChooseUs;
+      'services.feature-tiles': ServicesFeatureTiles;
       'services.services': ServicesServices;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;

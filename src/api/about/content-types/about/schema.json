@@ -12,12 +12,56 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "Title": {
       "type": "string"
     },
-    "blocks": {
-      "type": "dynamiczone",
-      "components": ["shared.media", "shared.quote", "shared.rich-text", "shared.slider"]
+    "Description": {
+      "type": "text"
+    },
+    "aboutTiles": {
+      "type": "component",
+      "component": "tiles.banner-tiles",
+      "repeatable": true
+    },
+    "ourStoryTitle": {
+      "type": "string"
+    },
+    "OurStoryDescription": {
+      "type": "text"
+    },
+    "ourStoryImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ourCoreTitle": {
+      "type": "string"
+    },
+    "ourCoreDescription": {
+      "type": "text"
+    },
+    "ourCoreTites": {
+      "type": "component",
+      "component": "tiles.banner-tiles",
+      "repeatable": true
+    },
+    "leadershipTitle": {
+      "type": "string"
+    },
+    "leadershipDescription": {
+      "type": "text"
+    },
+    "team": {
+      "type": "component",
+      "component": "about-us.team",
+      "repeatable": true
+    },
+    "certificates": {
+      "type": "component",
+      "component": "tiles.banner-tiles",
+      "repeatable": true
     }
   }
 }
