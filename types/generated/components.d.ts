@@ -13,6 +13,42 @@ export interface AboutUsTeam extends Struct.ComponentSchema {
   };
 }
 
+export interface ContactContactTiles extends Struct.ComponentSchema {
+  collectionName: 'components_contact_contact_tiles';
+  info: {
+    displayName: 'contactTiles';
+  };
+  attributes: {
+    Details: Schema.Attribute.String;
+    Icon: Schema.Attribute.Media<'images'>;
+    Title: Schema.Attribute.String;
+    Type: Schema.Attribute.String;
+  };
+}
+
+export interface ContactEmergencyBlock extends Struct.ComponentSchema {
+  collectionName: 'components_contact_emergency_blocks';
+  info: {
+    displayName: 'Emergency Block';
+  };
+  attributes: {
+    Description: Schema.Attribute.String;
+    Details: Schema.Attribute.Text;
+    Title: Schema.Attribute.String;
+  };
+}
+
+export interface ContactFaqs extends Struct.ComponentSchema {
+  collectionName: 'components_contact_faqs';
+  info: {
+    displayName: 'Faqs';
+  };
+  attributes: {
+    Answer: Schema.Attribute.Text;
+    Question: Schema.Attribute.String;
+  };
+}
+
 export interface FooterContactInformation extends Struct.ComponentSchema {
   collectionName: 'components_footer_contact_informations';
   info: {
@@ -229,6 +265,9 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'about-us.team': AboutUsTeam;
+      'contact.contact-tiles': ContactContactTiles;
+      'contact.emergency-block': ContactEmergencyBlock;
+      'contact.faqs': ContactFaqs;
       'footer.contact-information': FooterContactInformation;
       'footer.contact-listing': FooterContactListing;
       'home-banner-section.choose-us': HomeBannerSectionChooseUs;

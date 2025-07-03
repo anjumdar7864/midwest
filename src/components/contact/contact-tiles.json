@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_contact_contact_tiles",
+  "info": {
+    "displayName": "contactTiles"
+  },
+  "options": {},
+  "attributes": {
+    "Icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Type": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Details": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

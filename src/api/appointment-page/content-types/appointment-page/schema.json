@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "appointment_pages",
+  "info": {
+    "singularName": "appointment-page",
+    "pluralName": "appointment-pages",
+    "displayName": "AppointmentPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Details": {
+      "type": "text"
+    }
+  }
+}

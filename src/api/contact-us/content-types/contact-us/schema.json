@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_uses",
+  "info": {
+    "singularName": "contact-us",
+    "pluralName": "contact-uses",
+    "displayName": "Contact Us"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "contactTiles": {
+      "type": "component",
+      "component": "contact.contact-tiles",
+      "repeatable": true
+    },
+    "EmergencyInformation": {
+      "type": "component",
+      "component": "contact.emergency-block",
+      "repeatable": false
+    },
+    "faqs": {
+      "type": "component",
+      "component": "contact.faqs",
+      "repeatable": true
+    }
+  }
+}

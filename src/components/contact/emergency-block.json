@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_contact_emergency_blocks",
+  "info": {
+    "displayName": "Emergency Block"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "Details": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}
